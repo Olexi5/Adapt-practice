@@ -13,6 +13,30 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <header class="container header">
+      <button type="button" class="menu__open" data-mob-open>
+        <img src="./images/menu.png" alt="" />
+      </button>
+      <div class="menu is-hidden" data-mob>
+        <div class="container">
+          <button type="button" class="menu__close" data-mob-close>x</button>
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li><a href="" class="menu__link">Works</a></li>
+              <li><a href="" class="menu__link">Blog</a></li>
+              <li><a href="" class="menu__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li><a href="" class="header__link">Works</a></li>
+          <li><a href="" class="header__link">Blog</a></li>
+          <li><a href="" class="header__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section class="container hero">
         <div class="hero__inf">
@@ -28,8 +52,8 @@
       </section>
       <section class="container post">
         <div class="post__about">
-        <h2 class="post__title">Recent posts</h2>
-        <a href="" class="post__link">View all</a>
+          <h2 class="post__title">Recent posts</h2>
+          <a href="" class="post__link">View all</a>
         </div>
         <ul class="post__list">
           <li class="post__item">
@@ -63,5 +87,6 @@
         </ul>
       </section>
     </main>
+    <script src="./mob.js"></script>
   </body>
 </html>
